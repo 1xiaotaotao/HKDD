@@ -1,0 +1,28 @@
+dataset: Amy
+seed: 11113 # random seed list: [11113, 22229, 33343, 44461, 55567]
+
+pretrained_models:
+  t5_path: huggingface/prot
+  bert_path: huggingface/bert
+  saprot_path: huggingface/saprot
+
+model:
+  feature_mode: fusion # know|deep|fusion
+  use_attention: true # Only feature_mode equals fusion the params is valid
+  deep_feature_mode: combined # semantic|structure|combined valid for ffn
+  semantic_feature_extractor: prot-t5 # prot-t5|esm-1b|esm-2|prot-bert valid for ffn
+  deep_model: ffn # ffn|mamba|lstm|transformer
+  joint_loss: true # Only feature_mode equals fusion the params is valid
+
+training:
+  batch_size: 16 # 8 for Cross_Beta_DB in paper
+  init_learning_rate: 0.005 # 0.001 for Cross_Beta_DB in paper
+  epochs: 30
+  early_stopping_patience: 10
+
+save:
+  model_path: model
+  attn_weights_path: saved/attn_weights
+  losses_path: saved/losses
+  probs_path: saved/probs
+  umap_features_path: saved/umap_features
