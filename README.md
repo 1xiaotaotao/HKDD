@@ -77,8 +77,8 @@ The core dependency versions are pinned in `requirements.txt`. The project curre
 Create and activate a Conda environment:
 
 ```bash
-conda create -n amyloid-classifier python=3.10 -y
-conda activate amyloid-classifier
+conda create -n HKDD python=3.10 -y
+conda activate HKDD
 ```
 
 Install the core dependencies:
