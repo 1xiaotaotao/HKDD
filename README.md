@@ -6,11 +6,11 @@ The repository supports training, cross-validation, and independent evaluation o
 
 ## Graphical Abstract
 
-![System overview](./%E7%B3%BB%E7%BB%9F%E6%A1%86%E5%9B%BE.png)
+![System overview](./graphical_abstract.png)
 
 ## System Overview
 
-![Graphical abstract](./%E6%91%98%E8%A6%81%E5%9B%BE.png)
+![Graphical abstract](./system_overview.png)
 
 ## Highlights
 
